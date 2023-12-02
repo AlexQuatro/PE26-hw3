@@ -23,7 +23,7 @@
 
 const userAge = prompt('Введіть число відповідне Вашому віку');
 
-if (+userAge > 0) {
+if (userAge && !isNaN(userAge)) {
 	if (userAge < 12) {
 		alert('Ви дитина');
 	} else if (userAge < 18) {
